@@ -1,5 +1,5 @@
-const { ActionRowBuilder, ButtonBuilder, ButtonStyle, SlashCommandBuilder, PermissionFlagsBits, EmbedBuilder } = require('discord.js')
-const { clientId, everyoneId } = require(`../config.json`)
+const { ActionRowBuilder, ButtonBuilder, ButtonStyle, SlashCommandBuilder, PermissionFlagsBits, EmbedBuilder } = require('discord.js') // import for later
+const { clientId, everyoneId } = require(`../config.json`) // import some ID for later
 
 module.exports = {
     async buttonFunc(Interaction){

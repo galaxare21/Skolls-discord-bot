@@ -1,5 +1,5 @@
 const { SlashCommandBuilder, PermissionFlagsBits } = require('discord.js')
-const { galaxId } = require("../../config.json")
+const { devId } = require("../../config.json")
 /* 
 cette commande n'est pas encore commenté car elle n'est pas destiné a être changé pour l'instant
 */
@@ -15,7 +15,7 @@ module.exports = {
 
     async execute(interaction) {
         console.log(interaction.user.id)
-        if (interaction.user.id === galaxId) {
+        if (interaction.user.id === devId) {
             const commandName = interaction.options.getString('command', true).toLowerCase()
             const command = interaction.client.commands.get(commandName)
 
